@@ -1,10 +1,27 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>{{title}}</title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    {{{body}}}
-  </body>
+
+<head>
+  <title>{{title}}</title>
+  <link href="https://cdn.jsdelivr.net/npm/animate.css@3.5.1" rel="stylesheet" type="text/css">
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link rel='stylesheet' href='/stylesheets/main.css' />
+</head>
+
+<body>
+  <header>
+    <a class="logo" href="/">home</a>
+  </header>
+  <section id="landing" class="parallax">
+
+    <transition name="fade" enter-active-class="animated fadeIn" leave-active-class="animated fadeOut">
+      {{{body}}}
+    </transition>
+
+  </section>
+  <section class="section2">
+    <p>product details desc </p>
+  </section>
+</body>
+
 </html>
